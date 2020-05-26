@@ -1,9 +1,9 @@
 FROM ubuntu
 
-ARG pat_token=i3bq3mvbmg5ih5ua4yirrs7a3sskgeaogvevu53w5j6cswdo23eq
-ARG service_url=https://dev.azure.com/v-anbols
+ARG pat_token
+ARG service_url=<https://dev.azure.com/orgname>
 ARG pool=Default
-ARG agent=AKELON147
+ARG agent
 
 COPY agent /data/ubuntu-agent
 ENV AGENT_ALLOW_RUNASROOT=1
