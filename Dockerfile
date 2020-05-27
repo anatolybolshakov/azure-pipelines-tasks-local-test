@@ -12,6 +12,7 @@ ENV AGENT_ALLOW_RUNASROOT=1
 RUN apt-get update && apt-get install -y openssh-client
 RUN apt-get update && apt-get install -y openssh-server
 RUN apt-get update && apt-get install -y vim
+RUN apt-get update && apt-get install -y git
 
 # Set up agent
 WORKDIR /data/agent
