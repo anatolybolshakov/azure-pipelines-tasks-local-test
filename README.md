@@ -17,7 +17,7 @@ How to run:
 
 2. Run:
 
-	  `docker run -it agent-ubuntu:1.0`
-    
+	  `docker run --add-host remotehost.net:127.0.0.1 -it agent-ubuntu:1.0`
+      `service ssh start`
 	  `./run.sh`
 
